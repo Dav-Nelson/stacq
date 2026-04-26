@@ -3,11 +3,13 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
+import QueuePage from './pages/QueuePage'
+
 const App = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<div>Home</div>} />
-      <Route path="/q/:slug" element={<div>Customer Queue Page</div>} />
+      <Route path="/q/:slug" element={<QueuePage />} />
       <Route path="/login" element={<div>Login</div>} />
     </Routes>
   </BrowserRouter>
